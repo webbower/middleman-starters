@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="{{ data.site.lang }}" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="{{ data.site.lang }}" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="{{ data.site.lang }}" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="{{ data.site.lang }}" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>{{ data.site.name }}{% if data.page.title %} &raquo; {{ data.page.title }} {% endif %}</title>
+	<link rel="stylesheet" href="css/wireframe.css" />
+</head>
+<body class="{{ data.page.bodyclass }}">
+	<header role="banner"></header>
+	
+	{% include "includes/nav" %}
+
+	<article role="main">
+		{{ yield }}
+	</article>
+	
+	<footer role="complementary"></footer>
+</body>
+</html>
