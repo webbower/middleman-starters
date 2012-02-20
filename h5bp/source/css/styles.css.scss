@@ -1,11 +1,44 @@
+// COMPASS CSS3 MIXINS
 @import 'compass/css3';
 
+// SET BASE VARIABLES
 @import 'partials/base';
-@import 'partials/mixins';
-@import 'partials/normalize';
-@import 'partials/content';
-@import 'partials/layout';
-@import 'partials/utilities';
-@import 'partials/mq';
 
+// PROJECT MIXINS
+@import 'partials/mixins';
+
+// H5BP NORMALIZE CSS IMPLEMENTATION - KITCHEN SINK VERSION
+@import 'partials/normalize';
+
+// ...OR INCLUES ONLY WHAT YOU WANT FROM NORMALIZE CSS
+// @import 'partials/normalize/display';
+// @import 'partials/normalize/base';
+// @import 'partials/normalize/links';
+// @import 'partials/normalize/typography';
+// @import 'partials/normalize/lists';
+// @import 'partials/normalize/embedded';
+// @import 'partials/normalize/figures';
+// @import 'partials/normalize/forms';
+// @import 'partials/normalize/tables';
+// @import 'partials/normalize/tables';
+// @import 'partials/normalize/chromeframe';
+
+
+// ==|== primary styles =====================================================
+// Author:
+// ==========================================================================
+
+// BASE CONTENT/TYPOGRAPHY STYLES
+@import 'partials/content';
+
+// LAYOUT STYLES
+@import 'partials/layout';
+
+// MEDIA QUERIES
+// @import 'partials/mq';
+
+// H5BP NON-SEMANTIC UTILITIY CLASSES
+@import 'partials/utilities';
+
+// H5BP PRINT STYLES AND YOUR OWN
 @import 'partials/print';
