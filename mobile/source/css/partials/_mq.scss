@@ -1,0 +1,18 @@
+// ==|== media queries ======================================================
+// EXAMPLE Media Query for Responsive Design.
+// This example overrides the primary ('mobile first') styles
+// Modify as content requires.
+// ==========================================================================
+
+@media only screen and (min-width: 800px) {
+  // Styles
+}
+
+// iPhone 4, Opera Mobile 11 and other high pixel ratio devices
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  // Styles
+}
