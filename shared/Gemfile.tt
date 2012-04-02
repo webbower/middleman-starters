@@ -1,0 +1,4 @@
+source :rubygems
+
+gem "middleman", "~> <%= Middleman::VERSION %>"
+# gem "rb-fsevent"
