@@ -2,13 +2,19 @@
 // Base
 // =============================================================================
 
-// 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
-// 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+// 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+//    `em` units.
+// 2. Prevents iOS text size adjust after orientation change, without disabling
+//    user zoom.
+
 html {
-	font-size: 100%;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
+	font-size: 100%; // 1
+	-webkit-text-size-adjust: 100%; // 2
+	-ms-text-size-adjust: 100%; // 2
 }
+
+// Addresses `font-family` inconsistency between `textarea` and other form
+// elements.
 
 html,
 button,
@@ -16,26 +22,10 @@ input,
 select,
 textarea {
 	font-family: sans-serif;
-	color: #222;
 }
+
+// Addresses margins handled incorrectly in IE 6/7.
 
 body {
 	margin: 0;
-	font-size: 1em;
-	line-height: 1.4;
-}
-
-// Remove text-shadow in selection highlight: h5bp.com/i
-// These selection declarations have to be separate
-// Also: hot pink! (or customize the background color to match your design)
-::-moz-selection {
-	background: #fe57a1;
-	color: #fff;
-	text-shadow: none;
-}
-
-::selection {
-	background: #fe57a1;
-	color: #fff;
-	text-shadow: none;
 }

@@ -5,19 +5,14 @@
 a {
 	color: #00e;
 
-	&:visited {
-		color: #551a8b;
-	}
-	
-	&:hover {
-		color: #06e;
-	}
-	
+	// Addresses `outline` inconsistency between Chrome and other browsers.
+
 	&:focus {
 		outline: thin dotted;
 	}
 
-	// Improve readability when focused and hovered in all browsers: h5bp.com/h
+	// Improves readability when focused and also mouse hovered in all browsers.
+	
 	&:hover,
 	&:active {
 		outline: 0;

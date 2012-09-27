@@ -2,22 +2,33 @@
 // Lists
 // =============================================================================
 
-ul,
-ol {
-	margin: 1em 0;
-	padding: 0 0 0 40px;
+// Addresses margins set differently in IE 6/7.
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
 }
 
 dd {
 	margin: 0 0 0 40px;
 }
 
+// Addresses paddings set differently in IE 6/7.
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
 nav {
+	// Corrects list images handled incorrectly in IE 7.
+	
 	ul,
 	ol {
 		list-style: none;
 		list-style-image: none;
-		margin: 0;
-		padding: 0;
 	}	
 }
